@@ -1,0 +1,19 @@
+/* Existing styles for review boxes, profile icons, and comments... */
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .slider-container button {
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+  .bhar_wala_dbba{
+    border: 2px solid red;
+  }
+  .reviews-container{
+    border: 4px solid black;
+  }

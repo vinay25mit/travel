@@ -4,6 +4,20 @@ import { Button } from "../styles/Button";
 import { NavLink } from "react-router-dom";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
+// import React from 'react';
+
+const WhatsAppChat = ({ phoneNumber }) => {
+  const handleWhatsAppClick = () => {
+    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}`, '_blank');
+  };
+
+  return (
+    <button className="WhatsApp" onClick={handleWhatsAppClick}>Chat</button>
+  );
+};
+
+// export default WhatsAppChat;
+
 const Footer = () => {
   return (
     <Wrapper>
@@ -15,9 +29,10 @@ const Footer = () => {
           </div>
 
           <div className="contact-short-btn">
-            <NavLink to="/">
-              <Button>Get Started</Button>
-            </NavLink>
+            {/* <NavLink to="/"> */}
+              <WhatsAppChat phoneNumber={"8227944534"}/>
+            {/* </NavLink> */}
+            
           </div>
         </div>
       </section>
@@ -27,7 +42,7 @@ const Footer = () => {
       <footer>
         <div className="container grid grid-four-column">
           <div className="footer-about">
-            <h3>Thapa Technical</h3>
+            <h3>Useful Links</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
 
@@ -77,7 +92,7 @@ const Footer = () => {
           <hr />
           <div className="container grid grid-two-column">
             <p>
-              @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
+              @{new Date().getFullYear()} WorldTour. All Rights Reserved
             </p>
             <div>
               <p>PRIVACY POLICY</p>

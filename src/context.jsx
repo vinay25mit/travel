@@ -18,7 +18,7 @@ const AppProvider = ({ children }) => {
     return dispatch({
       type: "HOME_UPDATE",
       payload: {
-        name: "Thapa Technical",
+        name: "",
         image: "./images/hero.svg",
       },
     });

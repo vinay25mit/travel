@@ -9,7 +9,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import Error from "./Error";
 import GoToTop from "./components/GoToTop";
-
+import Feedback from "./components/Feedback";
 const App = () => {
   const theme = {
     colors: {
@@ -45,7 +45,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
-
+        <Feedback/>
         <Footer />
       </BrowserRouter>
     </ThemeProvider>

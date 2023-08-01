@@ -11,14 +11,16 @@ const HeroSection = () => {
     <Wrapper>
       <div className="container grid grid-two-column">
         <div className="section-hero-data">
-          <p className="hero-top-data">THIS IS ME</p>
-          <h1 className="hero-heading">{name}</h1>
+          <p className="hero-top-data">World Tour</p>
+          <h1 className="hero-heading">WorkNation</h1>
           <p className="hero-para">
-            I'm {name}. A Full stack Developer, youtuber and freelancer. A Full
-            stack Developer, youtuber and freelancer.
+          Who does not want to travel to their heart’s content? Who does not want to explore the world? Who does not want to taste various delicacies different nations have to offer? Who does not want to experience the diverse cultures and traditions across the globe?
+But alas! Our pockets doesn’t allow it :(
+Bonjour Fellas,
+We ___ , welcomes you to the ultimate journey, as we embark on a being a transforming group tour company, committed to discovering the secrets of happiness all over the world and constructing the perfect budget friendly travel plans. Join us as we explore the art of self-discovery, build meaningful friendships, and embrace the essence of joy that can only be achieved via exploration. This incredible voyage will take you through stunning landscapes and soul-stirring encounters, igniting a spark that will drive you to complete your travel dreams.
           </p>
           <Button className="btn hireme-btn">
-            <NavLink to="/contact"> hire me </NavLink>
+            <NavLink to="/contact"> Explore </NavLink>
           </Button>
         </div>
 
